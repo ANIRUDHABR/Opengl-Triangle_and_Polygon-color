@@ -88,19 +88,16 @@ bres(int x1,int x2,int y1, int y2)
 	}
 	void main(int argc,char **argv)
 	{
-		printf("enter the values : ");
-		scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+	printf("enter the values : ");
+	scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
 	glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_SINGLE);
 	glutInitWindowSize(1367, 768);
 	glutInitWindowPosition(100, 100);
 	glutCreateWindow(" first lab program");
-	//initGL();
-	//glutDisplayFunc(display);
-	//glutMainLoop();
-		glutDisplayFunc(display);
-		myInit();
-		glutMainLoop();
+	glutDisplayFunc(display);
+	myInit();
+	glutMainLoop();
 	}
 		
 		
